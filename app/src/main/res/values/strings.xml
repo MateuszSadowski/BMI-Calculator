@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BMICalculator</string>
+    <string name="result_tag">Wynik BMI</string>
+    <string name="weight_tag">Waga</string>
+    <string name="height_tag">Wzrost</string>
+    <string name="exercise_more_toast_msg">Cwicz wiecej!</string>
 </resources>

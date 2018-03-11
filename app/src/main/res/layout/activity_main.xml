@@ -6,13 +6,70 @@
     android:layout_height="match_parent"
     tools:context="sadowskim.pl.bmicalculator.MainActivity">
 
+    <!--TODO: add english strings-->
+
     <TextView
+        android:id="@+id/result_tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/result_tag"
+        app:layout_constraintBottom_toBottomOf="@id/weight_tag"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/weight_tag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/result_tag"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <TextView
+        android:id="@+id/weight_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_tag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/height_tag"
+        app:layout_constraintTop_toTopOf="@id/result_tag" />
+
+    <EditText
+        android:id="@+id/weight_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/height_tag"
+        app:layout_constraintTop_toTopOf="@id/weight_tag"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <TextView
+        android:id="@+id/height_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height_tag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/weight_tag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/result_tag" />
+
+    <EditText
+        android:id="@+id/height_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/weight_tag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/height_tag"
+        app:layout_constraintVertical_bias="0.139" />
+
 
 </android.support.constraint.ConstraintLayout>
